@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
+
+:root{
+    --font-default: 'Poppins', sans-serif;
+    --main-background: rgba(8, 6, 26, 0.7);
+    --grad-1: rgba(74, 72, 173, 0.8);
+    --grad-2: rgba(91, 76, 146, 0.8);
+    font-family: var(--font-default);
+    --submit-btn-color: #37af65;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(90deg,var(--grad-1),var(--grad-2)), url('https://www.talk-business.co.uk/wp-content/uploads/2019/10/shutterstock_562244602.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header{
+    padding: 50px 0 20px 0;
+    text-align: center;
+}
+
+header > h1 {
+    font-weight: 400;
+    padding: 0 5px;
+}
+
+#description {
+    font-style: italic;
+    padding: 0 5px;
+    text-shadow: 1px 1px 2px #070707;
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background);
+    width: 600px;
+    padding: 20px 50px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+#form-element>*{
+    display: block;
+    font-family: var(--font-default);
+    margin-bottom: 5px;
+}
+
+form>* {
+    width: 100%;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+
+.input-boxes{
+    padding: 10px;
+    width: 100%;
+    box-sizing:border-box;
+    border-style: hidden;
+}
+
+#comments, #submit{
+    border-radius: 2px;
+}
+
+::placeholder, option, select{
+    font-size: 16px;
+}
+
+#submit{
+    background-color: var(--submit-btn-color);
+    color: white; 
+    font-size: 16px;  
+}
+
+:focus {
+    outline: none !important;
+    border:1px solid rgb(13, 3, 153);
+    box-shadow: 0 0 10px #0b66c7;
+}
+
+#form-element{
+    margin: 20px 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    margin: 0 10px;
+}
